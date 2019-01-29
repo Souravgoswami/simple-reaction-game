@@ -82,8 +82,8 @@ def main
 	end
 
 	on :mouse_move do |e|
-		square_touched = square.contains?(e.x, e.y) ? true : false
-		started = (e.x < @width - 1 && e.x > 1 && e.y < @height - 1 && e.y > 1 && started) ? true : false
+		square_touched = square.contains?(e.x, e.y)
+		started = (e.x < @width - 1 && e.x > 1 && e.y < @height - 1 && e.y > 1 && started)
 	end
 
 	update do
